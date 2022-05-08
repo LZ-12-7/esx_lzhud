@@ -1,0 +1,59 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/71ec5dd735.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">   
+    <link rel="stylesheet" href="styles.css">
+    <title>lz-hud</title>
+</head>
+    <body>
+       <div class="container" id="health">
+            <div class="bar" id="healthBack">
+                <p class="info-health">0</p>
+                <i class="fa-solid fa-heart-crack" id="health-icon"></i>
+            </div>
+        </div>
+
+        <div class="container" id="shield">
+            <div class="bar" id="shieldBack">
+                <p class="info-shield">0</p>
+                <i class="fa-solid fa-shield-halved" id="chaleco-icon"></i>
+            </div>
+        </div>
+
+        <div class="container" id="hunger">
+            <div class="bar" id="hungerBack">
+                <p class="info-hunger">0</p>
+                <i class="fa-solid fa-hamburger" id="hunger-icon"></i>
+            </div>
+        </div>
+
+        <div class="container" id="thirst">
+            <div class="bar" id="thirstBack">
+                <p class="info-thirst">0</p>
+                <i class="fa-solid fa-bottle-water" id="thirst-icon"></i>
+            </div>
+        </div>
+
+        <div class="container" id="identifier">
+            <div class="bar" id="idBack">
+                <p class="info-playerid">0</p>
+                <i class="fa-solid fa-id-badge"></i>
+            </div>
+        </div> 
+        <div class="money-container">
+            <div><i class="fa-solid fa-dollar-sign" id="money-icon"></i></div>
+            <div id="money">0</div>
+        </div>
+        <div class="bank-container">
+            <div><i class="fas fa-piggy-bank" id="bank-money-icon"></i></div>
+            <div id="bank-money">0</div>
+        </div>
+        <div class="black-money-container">
+            <div><i class="fa-solid fa-sack-dollar" id="black-money-icon"></i></div>
+            <div id="black-money">0</div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>

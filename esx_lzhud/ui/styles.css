@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+* {
+    color: aliceblue;
+    font-family: 'Poppins';
+} 
+
+body {
+    overflow: hidden;
+}
+
+.bar {
+    position: absolute;
+    width: 3vw;
+    height: 1.8vw;
+    border-radius: .3vw;
+    margin: 0;
+    left: .2vw;
+    background-color: rgba(0,0,0,1);
+    box-shadow: 0 0 .7vw rgba(0,0,0,.8); 
+}
+
+i {
+    position: absolute;
+    font-size: .8vw;
+    left: .2vw;
+    bottom: .5vw;
+}
+
+#thirst-icon {
+    position: absolute;
+    left: .4vw;
+}
+
+#healthBack {
+    position: absolute;
+    bottom: 7.5vw;
+}
+
+#shieldBack {
+    position: absolute;
+    bottom: 5.5vw;
+}
+
+#hungerBack {
+    position: absolute;
+    bottom: 3.5vw;
+}
+
+#thirstBack {
+    position: absolute;
+    bottom: 1.5vw;
+}
+
+#idBack {
+    position: absolute;
+    bottom: 9.5vw;
+}
+
+p {
+    position: absolute;
+    font-size: .8vw;
+    bottom: -.5vw;
+    right: .3vw;
+    text-align: center;
+    text-shadow: rgba(255,255,255,1) 0 0 .4vw;
+}
+
+.money-container {
+    position: absolute;
+    width: 10vw;
+    padding: 1%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: .3vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,1);
+    top: 5%;
+    right: 1%;
+    height: 1%;
+}
+
+#money-icon {
+    position: absolute;
+    color: green;
+    left: 5%;
+    bottom: 35%;
+    font-size: 1vw;
+}
+
+
+#money {
+    position: absolute;
+    font-size: 1vw;
+    bottom: 25%;
+    width: auto;
+    text-align: center;
+    left: 14.5%;
+}
+
+.bank-container {
+    position: absolute;
+    width: 10vw;
+    padding: 1%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: .3vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,1);
+    top: 13%;
+    right: 1%;
+    height: 1%;
+}
+
+#bank-money-icon {
+    position: absolute;
+    color: blue;
+    left: 3%;
+    bottom: 35%;
+    font-size: 1vw;
+}
+
+#bank-money {
+    position: absolute;
+    font-size: 1vw;
+    bottom: 25%;
+    width: auto;
+    text-align: center;
+    left: 15%;
+}
+
+.black-money-container {
+    position: absolute;
+    width: 10vw;
+    padding: 1%;
+    background-color: rgba(0,0,0,.5);
+    border-radius: .3vw;
+    box-shadow: 0 0 1vw rgba(0,0,0,1);
+    top: 20%;
+    right: 1%;
+    height: 1%;
+}
+
+#black-money-icon {
+    position: absolute;
+    color: rgba(0,0,0,1);
+    text-shadow: rgba(255,255,255,.5) 0 0 .4vw;
+    left: 3%;
+    bottom: 35%;
+    font-size: 1vw;
+}
+
+#black-money {
+    position: absolute;
+    font-size: 1vw;
+    bottom: 25%;
+    width: auto;
+    text-align: center;
+    left: 15%;
+}
