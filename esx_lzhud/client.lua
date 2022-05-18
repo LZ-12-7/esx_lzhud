@@ -1,4 +1,5 @@
 local ESX = exports['es_extended']:getSharedObject()
+
 function Status()
     self = {}
 
