@@ -10,6 +10,16 @@ function Status()
         SendNUIMessage(data)
     end
 
+    for i=1, #ESX.GetPlayerData().accounts, 1 do
+        if ESX.GetPlayerData().accounts[i].name == 'black_money' then
+            blackMoney = ESX.GetPlayerData().accounts[i].money
+        elseif ESX.GetPlayerData().accounts[i].name == 'bank' then
+            bank = ESX.GetPlayerData().accounts[i].money
+        elseif ESX.GetPlayerData().accounts[i].name == 'money' then
+            money = ESX.GetPlayerData().accounts[i].money
+        end 
+    end
+
     self.init = function()
         CreateThread(function()
             while(true)do
@@ -21,16 +31,6 @@ function Status()
                     self.triggerEvent('esx_status:getStatus', 'thirst', function(status)
                         thirst = status.val / 10000 
                     end)
-
-                    for i=1, #ESX.GetPlayerData().accounts, 1 do
-                        if ESX.GetPlayerData().accounts[i].name == 'black_money' then
-                            blackMoney = ESX.GetPlayerData().accounts[i].money
-                        elseif ESX.GetPlayerData().accounts[i].name == 'bank' then
-                            bank = ESX.GetPlayerData().accounts[i].money
-                        elseif ESX.GetPlayerData().accounts[i].name == 'money' then
-                            money = ESX.GetPlayerData().accounts[i].money
-                        end 
-                    end
 
                     if IsPauseMenuActive() then
                         self.sendNui({ action = 'hide' })
