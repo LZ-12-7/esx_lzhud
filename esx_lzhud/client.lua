@@ -2,7 +2,7 @@ local ESX = exports['es_extended']:getSharedObject()
 
 function Status()
     self = {}
-    local PlayerData = ESX.GetPlayerData()
+    PlayerData = ESX.GetPlayerData()
 
     self.triggerEvent = function(e, ...)
         TriggerEvent(e, ...)
