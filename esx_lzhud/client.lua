@@ -2,6 +2,7 @@ local ESX = exports['es_extended']:getSharedObject()
 
 function Status()
     self = {}
+    local PlayerData = ESX.GetPlayerData()
 
     self.triggerEvent = function(e, ...)
         TriggerEvent(e, ...)
@@ -11,13 +12,13 @@ function Status()
         SendNUIMessage(data)
     end
 
-    for i=1, #ESX.GetPlayerData().accounts, 1 do
-        if ESX.GetPlayerData().accounts[i].name == 'black_money' then
-            blackMoney = ESX.GetPlayerData().accounts[i].money
-        elseif ESX.GetPlayerData().accounts[i].name == 'bank' then
-            bank = ESX.GetPlayerData().accounts[i].money
-        elseif ESX.GetPlayerData().accounts[i].name == 'money' then
-            money = ESX.GetPlayerData().accounts[i].money
+    for i=1, #PlayerData.accounts, 1 do
+        if PlayerData.accounts[i].name == 'black_money' then
+            blackMoney = PlayerData.accounts[i].money
+        elseif PlayerData.accounts[i].name == 'bank' then
+            bank = PlayerData.accounts[i].money
+        elseif PlayerData.accounts[i].name == 'money' then
+            money = PlayerData.accounts[i].money
         end 
     end
 
