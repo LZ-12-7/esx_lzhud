@@ -12,16 +12,6 @@ function Status()
         SendNUIMessage(data)
     end
 
-    for i=1, #PlayerData.accounts, 1 do
-        if PlayerData.accounts[i].name == 'black_money' then
-            blackMoney = PlayerData.accounts[i].money
-        elseif PlayerData.accounts[i].name == 'bank' then
-            bank = PlayerData.accounts[i].money
-        elseif PlayerData.accounts[i].name == 'money' then
-            money = PlayerData.accounts[i].money
-        end 
-    end
-
     self.init = function()
         CreateThread(function()
             while(true)do
@@ -39,7 +29,8 @@ function Status()
                     else
                         self.sendNui({ action = 'show' })
                     end
-
+                    
+              ESX.TriggerServerCallback('hud:getmoney', function(money, bank)
                     self.sendNui({
                         type        = "updatehud";
                         method      = "hud";
@@ -62,6 +53,7 @@ function Status()
                             DisplayRadar(false)
                         end
                     end
+                end)
             end
         end)
     end
