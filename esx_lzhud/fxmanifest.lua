@@ -7,6 +7,8 @@ client_scripts {
     'config.lua',
 }
 
+server_script "server.lua"
+
 ui_page "ui/ui.html"
 
 files {
